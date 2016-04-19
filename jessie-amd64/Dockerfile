@@ -70,6 +70,7 @@ RUN useradd -m buildslave \
  && mv *.tar.xz *.tar.bz2 *.img linux-*.config asustor-pkg-utilities asustor-toolchain /home/buildslave/ \
  && ln -s /home/buildslave/asustor-pkg-utilities/apkg-tool /home/buildslave/bin/apkg-tool \
  && ln -s /home/buildslave/asustor-pkg-utilities/apkg-tools.py /home/buildslave/bin/apkg-tools.py \
+ && ln -s /home/buildslave/asustor-pkg-utilities/asustor-build-env /home/buildslave/bin/asustor-build-env \
  && ln -s /home/buildslave/asustor-pkg-utilities/extract-admimage.sh /home/buildslave/bin/extract-admimage.sh \
  && ln -s /home/buildslave/asustor-pkg-utilities/yaml-to-json.py /home/buildslave/bin/yaml-to-json.py \
  && chmod a+x /home/buildslave/bin/* \
