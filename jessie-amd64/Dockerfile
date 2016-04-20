@@ -25,12 +25,15 @@ RUN apt-get update \
  git \
  gperf \
  help2man \
+ intltool \
  kpartx \
  libncurses5-dev \
+ libssl-dev \
  libtool-bin \
  lsb-release \
  openjdk-7-jdk \
  openssh-server \
+ pkg-config \
  python-dev \
  python-simplejson \
  python-yaml \
@@ -42,6 +45,7 @@ RUN apt-get update \
  vim \
  wget \
  xz-utils \
+ zlib1g-dev \
  && apt-get clean \
  && rm -rf \
  /var/lib/apt/lists/* \
